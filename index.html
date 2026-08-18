@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dedet 18 | Rumah Scandinavian Beji Timur, Depok</title>
+  <meta name="description" content="Dijual rumah baru tipe Scandinavian, cluster 3 unit di Jl. Dedet No.18 Beji Timur, Depok. Harga mulai Rp1,25 Miliar (Kav. A) negotiable. SHM, IMB-PBG, PBB.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+    :root {
+      --dark: #202421;
+      --text: #343735;
+      --muted: #777b77;
+      --cream: #f5f1e9;
+      --white: #ffffff;
+      --wood: #9b8064;
+      --light: #eeeae2;
+      --green: #526052;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: .3s;
+    }
+
+    .navbar.scrolled {
+      background: rgba(255, 255, 255, .96);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: var(--wood);
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 120px 7% 80px;
+      background: linear-gradient(90deg, rgba(0, 0, 0, .65), rgba(0, 0, 0, .25)),
+        url('images/eksterior-fasad.jpg') center/cover;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, .15);
+      border: 1px solid rgba(255, 255, 255, .4);
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 1.05;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 620px;
+      margin-bottom: 18px;
+    }
+
+    .price {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .price-note {
+      font-size: 14px;
+      opacity: .85;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: .3s;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    .btn-primary {
+      background: white;
+      color: var(--dark);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-dark {
+      background: var(--dark);
+      color: white;
+    }
+
+    .btn-dark:hover {
+      opacity: .9;
+    }
+
+    section {
+      padding: 90px 7%;
+    }
+
+    .section-header {
+      max-width: 720px;
+      margin-bottom: 50px;
+    }
+
+    .section-header span {
+      color: var(--wood);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+
+    .section-header h2 {
+      font-size: 42px;
+      margin: 10px 0 15px;
+    }
+
+    .section-header p {
+      color: var(--muted);
+    }
+
+    .intro {
+      background: var(--cream);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .intro-image img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .intro-text span {
+      color: var(--wood);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+
+    .intro-text h2 {
+      font-size: 42px;
+      margin: 10px 0 20px;
+    }
+
+    .intro-text p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .intro-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pill {
+      background: white;
+      border: 1px solid #e6e3dd;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .units {
+      background: white;
+    }
+
+    .unit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .unit-card {
+      border: 1px solid #e6e3dd;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: .3s;
+      background: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .unit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+    }
+
+    .unit-image {
+      height: 230px;
+      background: #ddd;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .unit-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .unit-c .unit-image img {
+      object-position: 50% 42%;
+      filter: grayscale(.15);
+    }
+
+    .indent-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(32, 36, 33, .15), rgba(32, 36, 33, .72));
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 18px;
+    }
+
+    .indent-overlay strong {
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    .indent-overlay span {
+      font-size: 13px;
+      opacity: .9;
+    }
+
+    .unit-content {
+      padding: 25px;
+      flex: 1;
+    }
+
+    .unit-content h3 {
+      font-size: 27px;
+    }
+
+    .status {
+      display: inline-block;
+      margin: 10px 0;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .status-ready {
+      background: #e8efe8;
+      color: #4c634d;
+    }
+
+    .status-finishing {
+      background: #f4ead4;
+      color: #7a5b2a;
+    }
+
+    .status-indent {
+      background: #ece9e3;
+      color: #5d5a54;
+    }
+
+    .unit-price {
+      font-weight: 700;
+      font-size: 20px;
+      margin: 12px 0 6px;
+    }
+
+    .unit-note {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    .specs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .spec-block {
+      background: var(--cream);
+    }
+
+    .spec-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .spec-card {
+      background: white;
+      border-radius: 8px;
+      padding: 30px;
+    }
+
+    .spec-card h3 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+
+    .spec-card ul {
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .spec-card li {
+      margin-bottom: 8px;
+    }
+
+    .bonus-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 25px;
+    }
+
+    .bonus {
+      background: white;
+      padding: 22px;
+      border-radius: 8px;
+    }
+
+    .bonus span {
+      color: var(--wood);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .bonus h3 {
+      font-size: 20px;
+      margin: 8px 0;
+    }
+
+    .bonus p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .features {
+      background: var(--cream);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .feature {
+      padding: 30px;
+      background: white;
+      border-radius: 6px;
+    }
+
+    .feature-icon {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .feature h3 {
+      font-size: 21px;
+      margin-bottom: 8px;
+    }
+
+    .feature p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .denah {
+      background: white;
+    }
+
+    .denah-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .denah-card {
+      border: 1px solid #e6e3dd;
+      border-radius: 8px;
+      overflow: hidden;
+      background: white;
+    }
+
+    .denah-card img {
+      width: 100%;
+      display: block;
+      background: #f7f5f0;
+    }
+
+    .denah-card h3 {
+      padding: 18px 22px 6px;
+      font-size: 22px;
+    }
+
+    .denah-card p {
+      padding: 0 22px 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .brosur {
+      margin-top: 25px;
+      border: 1px solid #e6e3dd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .brosur img {
+      width: 100%;
+      display: block;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 200px;
+      gap: 10px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-main {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .legal {
+      background: var(--dark);
+      color: white;
+    }
+
+    .legal-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .legal-card {
+      padding: 25px;
+      border: 1px solid rgba(255, 255, 255, .15);
+    }
+
+    .legal-card span {
+      color: #c9b59b;
+      font-size: 13px;
+    }
+
+    .legal-card h3 {
+      margin-top: 7px;
+    }
+
+    .legal-card p {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #bbb;
+    }
+
+    .kpr {
+      background: var(--cream);
+    }
+
+    .kpr-container {
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      padding: 45px;
+      border-radius: 8px;
+      box-shadow: 0 15px 50px rgba(0, 0, 0, .08);
+    }
+
+    .kpr-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 7px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
+    .kpr-result {
+      background: var(--dark);
+      color: white;
+      padding: 35px;
+      border-radius: 6px;
+    }
+
+    .kpr-result small {
+      color: #aaa;
+    }
+
+    .monthly {
+      font-size: 38px;
+      font-weight: 700;
+      margin: 10px 0 25px;
+    }
+
+    .result-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+    }
+
+    .kpr-note {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 20px;
+    }
+
+    .location {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 0;
+    }
+
+    .location-text {
+      padding: 90px 10%;
+      background: var(--cream);
+    }
+
+    .location-text span {
+      color: var(--wood);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+
+    .location-text h2 {
+      font-size: 36px;
+      margin: 10px 0 18px;
+    }
+
+    .location-text p {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .map-link {
+      display: inline-block;
+      margin-top: 8px;
+      color: var(--wood);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .location-map {
+      min-height: 520px;
+    }
+
+    .location-map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .nearby {
+      background: white;
+    }
+
+    .nearby-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .nearby-card {
+      border: 1px solid #e6e3dd;
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .nearby-card h3 {
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+
+    .nearby-card ul {
+      list-style: none;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .nearby-card li {
+      padding: 7px 0;
+      border-bottom: 1px solid #f0ece4;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .nearby-card li:last-child {
+      border-bottom: 0;
+    }
+
+    .nearby-card em {
+      font-style: normal;
+      color: var(--wood);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .cta {
+      text-align: center;
+      background: var(--wood);
+      color: white;
+    }
+
+    .cta h2 {
+      font-size: 48px;
+      max-width: 700px;
+      margin: auto auto 20px;
+    }
+
+    .cta p {
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background: #151715;
+      color: #aaa;
+      padding: 30px 7%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      right: 25px;
+      bottom: 25px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25D366;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      z-index: 2000;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, .25);
+    }
+
+    @media (max-width: 800px) {
+      .nav-links {
+        display: none;
+      }
+
+      section {
+        padding: 65px 6%;
+      }
+
+      .intro,
+      .kpr-grid,
+      .location,
+      .spec-grid,
+      .unit-grid,
+      .denah-grid,
+      .nearby-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-grid,
+      .legal-grid,
+      .bonus-row {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gallery-main {
+        grid-column: span 2;
+        grid-row: auto;
+      }
+
+      .hero {
+        min-height: 90vh;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .kpr-container {
+        padding: 25px;
+      }
+
+      .cta h2 {
+        font-size: 32px;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .location-map {
+        min-height: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="logo">Dedet 18</div>
+    <div class="nav-links">
+      <a href="#unit">Unit</a>
+      <a href="#denah">Denah</a>
+      <a href="#gallery">Galeri</a>
+      <a href="#kpr">KPR</a>
+      <a href="#location">Lokasi</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge">Cluster 3 Unit · Scandinavian House</span>
+      <h1>Rumah Baru di Beji Timur</h1>
+      <p>Dijual rumah baru tipe Scandinavian. Cluster eksklusif 3 unit di Jl. Dedet No.18 RT.004 RW.002, Beji Timur, Beji, Depok.</p>
+      <div class="price">Mulai Rp1,25 Miliar</div>
+      <div class="price-note">Kavling A · Harga negotiable</div>
+      <a href="#unit" class="btn btn-primary">Lihat Unit</a>
+      <a href="#kpr" class="btn btn-dark">Hitung KPR</a>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="intro-image">
+      <img src="images/interior-ruang-keluarga.jpg" alt="Ruang keluarga Kavling A Dedet 18">
+    </div>
+    <div class="intro-text">
+      <span>PRIVATE CLUSTER</span>
+      <h2>Hunian 2 Lantai untuk Keluarga</h2>
+      <p>Hanya 3 unit: Kavling A sudah ready, Kavling B finishing (ready 21 Agustus 2026), dan Kavling C indent.</p>
+      <p>Lokasi cluster tidak terdampak banjir dan memiliki akses mobil. Legalitas pecahan per unit: SHM, IMB-PBG, dan PBB.</p>
+      <div class="intro-pills">
+        <span class="pill">Tidak terdampak banjir</span>
+        <span class="pill">Akses mobil</span>
+        <span class="pill">Bonus AC 4 set</span>
+        <span class="pill">SHM pecahan</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="units" id="unit">
+    <div class="section-header">
+      <span>PILIHAN UNIT</span>
+      <h2>Kavling A, B, dan C</h2>
+      <p>Kavling A di kiri, Kavling B di kanan. Kavling C masih indent.</p>
+    </div>
+    <div class="unit-grid">
+      <div class="unit-card unit-a">
+        <div class="unit-image">
+          <img src="images/kavling-a.jpg" alt="Kavling A - unit kiri cluster Dedet 18">
+        </div>
+        <div class="unit-content">
+          <h3>Kavling A</h3>
+          <span class="status status-ready">READY</span>
+          <div class="unit-price">Rp1,25 Miliar</div>
+          <p class="unit-note">Negotiable</p>
+          <div class="specs">
+            <span>LT 52 m²</span>
+            <span>LB 89 m²</span>
+            <span>3 Kamar Tidur</span>
+            <span>2 Kamar Mandi</span>
+          </div>
+        </div>
+      </div>
+      <div class="unit-card unit-b">
+        <div class="unit-image">
+          <img src="images/kavling-b.jpg" alt="Kavling B - unit kanan cluster Dedet 18">
+        </div>
+        <div class="unit-content">
+          <h3>Kavling B</h3>
+          <span class="status status-finishing">FINISHING</span>
+          <div class="unit-price">Hubungi Kami</div>
+          <p class="unit-note">Ready 21 Agustus 2026</p>
+          <div class="specs">
+            <span>LT 55 m²</span>
+            <span>LB 94 m²</span>
+            <span>3 Kamar Tidur</span>
+            <span>2 Kamar Mandi</span>
+          </div>
+        </div>
+      </div>
+      <div class="unit-card unit-c">
+        <div class="unit-image">
+          <img src="images/brosur-cluster.jpg" alt="Ilustrasi Kavling C indent">
+          <div class="indent-overlay">
+            <strong>INDENT</strong>
+            <span>Pre-order · Tanah terluas</span>
+          </div>
+        </div>
+        <div class="unit-content">
+          <h3>Kavling C</h3>
+          <span class="status status-indent">INDENT</span>
+          <div class="unit-price">Hubungi Kami</div>
+          <p class="unit-note">Belum terbangun · ilustrasi cluster</p>
+          <div class="specs">
+            <span>LT 77 m²</span>
+            <span>LB 99 m²</span>
+            <span>3 Kamar Tidur</span>
+            <span>2 Kamar Mandi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="spec-block" id="spesifikasi">
+    <div class="section-header">
+      <span>SPESIFIKASI KAVLING A</span>
+      <h2>LT 52 m² / LB 89 m²</h2>
+      <p>Detail ruang unit yang sudah ready stock.</p>
+    </div>
+    <div class="spec-grid">
+      <div class="spec-card">
+        <h3>Lantai Bawah</h3>
+        <ul>
+          <li>Garasi</li>
+          <li>Teras depan</li>
+          <li>Ruang keluarga / tamu</li>
+          <li>Kamar mandi</li>
+          <li>Area dapur</li>
+          <li>Teras belakang</li>
+        </ul>
+      </div>
+      <div class="spec-card">
+        <h3>Lantai Atas</h3>
+        <ul>
+          <li>3 kamar tidur</li>
+          <li>1 kamar mandi</li>
+          <li>Balkon kamar utama</li>
+          <li>Dak toren</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bonus-row">
+      <div class="bonus">
+        <span>BONUS</span>
+        <h3>AC 4 Set</h3>
+        <p>Sudah termasuk 4 unit AC.</p>
+      </div>
+      <div class="bonus">
+        <span>BONUS</span>
+        <h3>Pompa Pendorong</h3>
+        <p>Dari toren ke semua keran.</p>
+      </div>
+      <div class="bonus">
+        <span>INSTALASI</span>
+        <h3>Water Heater</h3>
+        <p>Pipa water heater sudah disiapkan.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="denah" id="denah">
+    <div class="section-header">
+      <span>DENAH KAVLING A</span>
+      <h2>Tata Ruang Lantai 1 & 2</h2>
+      <p>Denah di bawah adalah layout Kavling A. Kavling C indent, belum ada bangunan.</p>
+    </div>
+    <div class="denah-grid">
+      <div class="denah-card">
+        <img src="images/denah-lantai-1.jpg" alt="Denah lantai 1 Kavling A">
+        <h3>Lantai 1</h3>
+        <p>Garasi, teras depan, ruang keluarga/tamu, kamar mandi, dapur, dan teras belakang.</p>
+      </div>
+      <div class="denah-card">
+        <img src="images/denah-lantai-2.jpg" alt="Denah lantai 2 Kavling A">
+        <h3>Lantai 2</h3>
+        <p>3 kamar tidur, 1 kamar mandi, balkon kamar utama, dan dak toren.</p>
+      </div>
+    </div>
+    <div class="brosur">
+      <img src="images/brosur-kavling.jpg" alt="Site plan Kavling A, B, dan C Dedet 18">
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="section-header">
+      <span>KEUNGGULAN</span>
+      <h2>Siap Huni dan Fungsional</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-icon">⌂</div>
+        <h3>3 Kamar Tidur</h3>
+        <p>Termasuk kamar utama dengan balkon.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">◫</div>
+        <h3>Ruang Keluarga</h3>
+        <p>Area tamu dan keluarga di lantai bawah.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">◯</div>
+        <h3>Garasi Mobil</h3>
+        <p>Akses mobil langsung ke cluster.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">⌂</div>
+        <h3>Bebas Banjir</h3>
+        <p>Lokasi cluster tidak terdampak banjir.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="section-header">
+      <span>GALERI KAVLING A</span>
+      <h2>Lihat Unit Ready</h2>
+      <p>Foto interior dan eksterior diambil dari Kavling A yang sudah siap huni. Kavling B masih finishing. Kavling C masih indent.</p>
+    </div>
+    <div class="gallery-grid">
+      <img class="gallery-main" src="images/kamar-utama.jpg" alt="Kamar utama Kavling A">
+      <img src="images/interior-ruang-tamu.jpg" alt="Ruang tamu Kavling A">
+      <img src="images/interior-tangga-atas.jpg" alt="Tangga lantai 2 Kavling A">
+      <img src="images/kamar-mandi-utama.jpg" alt="Kamar mandi Kavling A">
+      <img src="images/kamar-tidur-2.jpg" alt="Kamar tidur 2 Kavling A">
+      <img src="images/sisi-rumah.jpg" alt="Sisi rumah Kavling A">
+      <img src="images/eksterior-balkon.jpg" alt="Balkon Kavling A dan B">
+      <img src="images/kamar-mandi-washtafel.jpg" alt="Washtafel kamar mandi">
+      <img src="images/interior-selasar.jpg" alt="Selasar lantai 2">
+      <img src="images/kamar-tidur-3.jpg" alt="Kamar tidur 3 Kavling A">
+      <img src="images/kamar-mandi-shower.jpg" alt="Shower kamar mandi">
+      <img src="images/interior-tangga.jpg" alt="Tangga lantai 1 Kavling A">
+    </div>
+  </section>
+
+  <section class="legal">
+    <div class="section-header">
+      <span>LEGALITAS & UTILITAS</span>
+      <h2>Aman, Pecahan per Unit</h2>
+    </div>
+    <div class="legal-grid">
+      <div class="legal-card">
+        <span>LEGALITAS</span>
+        <h3>SHM</h3>
+        <p>Pecahan per unit</p>
+      </div>
+      <div class="legal-card">
+        <span>IZIN</span>
+        <h3>IMB - PBG</h3>
+        <p>Pecahan per unit</p>
+      </div>
+      <div class="legal-card">
+        <span>PAJAK</span>
+        <h3>PBB</h3>
+        <p>Pecahan per unit</p>
+      </div>
+      <div class="legal-card">
+        <span>LISTRIK</span>
+        <h3>PLN 2.200W</h3>
+        <p>Siap huni</p>
+      </div>
+      <div class="legal-card">
+        <span>AIR TANAH</span>
+        <h3>Sumur Bor 30 m</h3>
+        <p>Pompa air + toren 500 liter</p>
+      </div>
+      <div class="legal-card">
+        <span>BONUS</span>
+        <h3>AC 4 Set</h3>
+        <p>Termasuk pompa pendorong</p>
+      </div>
+      <div class="legal-card">
+        <span>INSTALASI</span>
+        <h3>Water Heater</h3>
+        <p>Pipa sudah disiapkan</p>
+      </div>
+      <div class="legal-card">
+        <span>LOKASI</span>
+        <h3>Bebas Banjir</h3>
+        <p>Akses mobil ke cluster</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="kpr" id="kpr">
+    <div class="section-header">
+      <span>KPR CALCULATOR</span>
+      <h2>Hitung Estimasi Cicilan</h2>
+      <p>Simulasi berdasarkan harga Kavling A Rp1,25 Miliar. Harga negotiable.</p>
+    </div>
+    <div class="kpr-container">
+      <div class="kpr-grid">
+        <div>
+          <div class="form-group">
+            <label>Harga Rumah</label>
+            <input type="number" id="price" value="1250000000">
+          </div>
+          <div class="form-group">
+            <label>DP</label>
+            <input type="number" id="dp" value="600000000">
+          </div>
+          <div class="form-group">
+            <label>Bunga KPR (% per tahun)</label>
+            <input type="number" id="interest" value="8.4" step="0.1">
+          </div>
+          <div class="form-group">
+            <label>Tenor</label>
+            <select id="tenor">
+              <option value="5">5 Tahun</option>
+              <option value="10">10 Tahun</option>
+              <option value="15" selected>15 Tahun</option>
+              <option value="20">20 Tahun</option>
+            </select>
+          </div>
+          <button onclick="calculateKPR()" class="btn btn-dark" style="border:0;cursor:pointer">Hitung Cicilan</button>
+        </div>
+        <div class="kpr-result">
+          <small>ESTIMASI CICILAN / BULAN</small>
+          <div class="monthly" id="monthly">Rp0</div>
+          <div class="result-row">
+            <span>Harga Rumah</span>
+            <strong id="resultPrice">Rp0</strong>
+          </div>
+          <div class="result-row">
+            <span>DP</span>
+            <strong id="resultDP">Rp0</strong>
+          </div>
+          <div class="result-row">
+            <span>Pinjaman</span>
+            <strong id="loan">Rp0</strong>
+          </div>
+          <div class="result-row">
+            <span>Tenor</span>
+            <strong id="resultTenor">-</strong>
+          </div>
+          <p class="kpr-note">*Simulasi hanya estimasi dan bukan penawaran resmi dari bank. Cicilan sebenarnya dapat berbeda berdasarkan suku bunga, biaya, kebijakan bank, dan profil pemohon.</p>
+          <br>
+          <a id="waKpr" href="https://wa.me/6287777626067" class="btn btn-primary">Konsultasi KPR via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nearby" id="fasilitas">
+    <div class="section-header">
+      <span>FASILITAS SEKITAR</span>
+      <h2>Dekat Sekolah, Mall, dan Tol</h2>
+    </div>
+    <div class="nearby-grid">
+      <div class="nearby-card">
+        <h3>Sekolah</h3>
+        <ul>
+          <li>SDN Beji Timur 1 <em>3 mnt</em></li>
+          <li>SMP Negeri 5 Depok <em>2 mnt</em></li>
+          <li>SMP Muhammadiyah 1 <em>2 mnt</em></li>
+          <li>SMP Islam Taufiqurrahman <em>3 mnt</em></li>
+          <li>SMA Muhammadiyah 2 <em>4 mnt</em></li>
+          <li>SDIT-SMPIT Darul Abidin <em>5 mnt</em></li>
+          <li>SDIT Ummu'l Quro <em>6 mnt</em></li>
+          <li>SMP Harapan Massa <em>6 mnt</em></li>
+          <li>SMP / SMA Putra Bangsa <em>7 mnt</em></li>
+          <li>SMA Negeri 14 Depok <em>7 mnt</em></li>
+          <li>SMA Sejahtera 1 Depok <em>9 mnt</em></li>
+        </ul>
+      </div>
+      <div class="nearby-card">
+        <h3>Belanja</h3>
+        <ul>
+          <li>Mostly Coffee & Kitchen <em>2 mnt</em></li>
+          <li>Pasar Kemiri Depok <em>6 mnt</em></li>
+          <li>Depok Town Square <em>8 mnt</em></li>
+          <li>CIPLAZ Depok <em>10 mnt</em></li>
+          <li>ITC Depok <em>10 mnt</em></li>
+          <li>D'Mall Depok <em>11 mnt</em></li>
+          <li>MargoCity <em>16 mnt</em></li>
+        </ul>
+      </div>
+      <div class="nearby-card">
+        <h3>Kesehatan</h3>
+        <ul>
+          <li>Puskesmas Beji <em>2 mnt</em></li>
+          <li>RS Graha Permata Ibu <em>9 mnt</em></li>
+          <li>Eka Hospital Margonda <em>11 mnt</em></li>
+          <li>Puskesmas Depok Utara <em>11 mnt</em></li>
+          <li>Puskesmas Kemiri Muka <em>12 mnt</em></li>
+          <li>RS Mitra Keluarga <em>12 mnt</em></li>
+          <li>RSU Bunda Margonda <em>14 mnt</em></li>
+          <li>RS Universitas Indonesia <em>18 mnt</em></li>
+        </ul>
+      </div>
+      <div class="nearby-card">
+        <h3>Akses</h3>
+        <ul>
+          <li>Tol Margonda 1 <em>9 mnt</em></li>
+          <li>Tol Kukusan 1 <em>10 mnt</em></li>
+          <li>Tol Margonda 3 <em>14 mnt</em></li>
+          <li>Terminal Depok <em>15 mnt</em></li>
+          <li>Tol Kukusan 2 <em>17 mnt</em></li>
+          <li>Tol Kukusan 4 <em>20 mnt</em></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="location" id="location">
+    <div class="location-text">
+      <span>LOKASI</span>
+      <h2>Jl. Dedet No.18, Beji Timur</h2>
+      <p>RT.004 RW.002, Beji Timur, Beji, Depok. Cluster 3 unit (Kavling A, B, dan C) dengan akses mobil.</p>
+      <p>Lokasi tidak terdampak banjir, dekat sekolah, puskesmas, mall, dan gerbang tol Kukusan / Margonda.</p>
+      <a class="map-link" href="https://www.google.com/maps/@-6.3780804,106.8221177,3a,75y,232.99h,82.32t/data=!3m10!1e1!3m8!1sQrPcw3Be7MIJQV3DHD_lrg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D7.679399198931904%26panoid%3DQrPcw3Be7MIJQV3DHD_lrg%26yaw%3D232.98979973297727!7i16384!8i8192!9m2!1b1!2i48?entry=ttu" target="_blank" rel="noopener">Lihat Street View Jl. Dedet</a>
+    </div>
+    <div class="location-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1723960000000!6m8!1m7!1sQrPcw3Be7MIJQV3DHD_lrg!2m2!1d-6.3780804!2d106.8221177!3f232.99!4f-7.68!5f0.75" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Hanya 3 Unit. Kavling A Sudah Ready.</h2>
+    <p>Hubungi kami untuk survey Kavling A, booking Kavling B, atau indent Kavling C.</p>
+    <a id="waMain" href="https://wa.me/6287777626067" class="btn btn-primary">Chat WhatsApp</a>
+  </section>
+
+  <footer>
+    <div>© 2026 Dedet 18</div>
+    <div>Jl. Dedet No.18 RT.004 RW.002, Beji Timur, Depok</div>
+  </footer>
+
+  <a id="waFloat" href="https://wa.me/6287777626067" class="whatsapp" aria-label="WhatsApp">☎</a>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    function formatRupiah(number) {
+      return new Intl.NumberFormat('id-ID', {
+        style: 'currency',
+        currency: 'IDR',
+        maximumFractionDigits: 0
+      }).format(number);
+    }
+
+    function getWhatsAppLink(message) {
+      return 'https://wa.me/6287777626067?text=' + encodeURIComponent(message);
+    }
+
+    function openWhatsApp(message) {
+      window.open(getWhatsAppLink(message), '_blank');
+    }
+
+    let kprWhatsAppMessage = '';
+
+    function setWhatsAppLinks() {
+      const defaultMessage = 'Halo, saya tertarik dengan rumah Dedet 18 di Jl. Dedet No.18 Beji Timur, Depok. Mohon info harga dan ketersediaan unitnya.';
+
+      document.getElementById('waMain').onclick = function (event) {
+        event.preventDefault();
+        openWhatsApp(defaultMessage);
+      };
+
+      document.getElementById('waFloat').onclick = function (event) {
+        event.preventDefault();
+        openWhatsApp(defaultMessage);
+      };
+
+      document.getElementById('waKpr').onclick = function (event) {
+        event.preventDefault();
+        openWhatsApp(kprWhatsAppMessage);
+      };
+    }
+
+    function calculateKPR() {
+      const price = Number(document.getElementById('price').value);
+      const dp = Number(document.getElementById('dp').value);
+      const annualInterest = Number(document.getElementById('interest').value);
+      const years = Number(document.getElementById('tenor').value);
+      const loan = price - dp;
+      const months = years * 12;
+      const monthlyInterest = annualInterest / 100 / 12;
+      let monthlyPayment;
+
+      if (monthlyInterest === 0) {
+        monthlyPayment = loan / months;
+      } else {
+        monthlyPayment = loan * monthlyInterest * Math.pow(1 + monthlyInterest, months) /
+          (Math.pow(1 + monthlyInterest, months) - 1);
+      }
+
+      document.getElementById('monthly').innerText = formatRupiah(monthlyPayment);
+      document.getElementById('resultPrice').innerText = formatRupiah(price);
+      document.getElementById('resultDP').innerText = formatRupiah(dp);
+      document.getElementById('loan').innerText = formatRupiah(loan);
+      document.getElementById('resultTenor').innerText = years + ' Tahun';
+
+      kprWhatsAppMessage = `Halo, saya tertarik dengan rumah Dedet 18, Jl. Dedet No.18 Beji Timur.
+Harga rumah: ${formatRupiah(price)}
+DP: ${formatRupiah(dp)}
+Pinjaman: ${formatRupiah(loan)}
+Tenor: ${years} tahun
+Estimasi cicilan: ${formatRupiah(monthlyPayment)}/bulan
+Saya ingin konsultasi mengenai KPR dan unit yang tersedia.`;
+    }
+
+    setWhatsAppLinks();
+    calculateKPR();
+  </script>
+</body>
+</html>
