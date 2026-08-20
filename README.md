@@ -139,8 +139,10 @@ dedet18/
 3. Branch: **main** / folder **/ (root)**
 4. Save
 
-Website akan tersedia di:
+Website:
 
 ```text
-https://pribadisendiri84.github.io/dedet18/
+https://dedet18.com/
 ```
+
+Custom domain GitHub Pages memakai file `CNAME` berisi `dedet18.com`. Kalau masih terbuka lewat `github.io`, halaman akan redirect ke domain utama.
